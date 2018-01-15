@@ -1,0 +1,19 @@
+{
+  "name": "perfion-front-end",
+  "version": "0.0.0",
+  "description": "Demo of the new perfion app design made with html and css.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ftujio/PerfionFrontEnd.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ftujio/PerfionFrontEnd/issues"
+  },
+  "homepage": "https://github.com/Ftujio/PerfionFrontEnd#readme"
+}
