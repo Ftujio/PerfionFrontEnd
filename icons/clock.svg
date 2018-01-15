@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <title>clock</title>
+  <g id="Layer_1" data-name="Layer 1">
+    <path d="M10,0A10,10,0,1,0,20,10,10,10,0,0,0,10,0Zm0,18a8,8,0,1,1,8-8A8,8,0,0,1,10,18Z"/>
+    <path d="M11,5A1,1,0,0,0,9,5v5a1,1,0,0,0,1,1h5a1,1,0,0,0,0-2H11Z"/>
+  </g>
+</svg>
