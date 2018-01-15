@@ -3,18 +3,46 @@
   font-family: 'Fira Sans', sans-serif;
 }
 
-#page-wrapper {
-  width: 1600px;
-  margin: 0px auto;
-}
-
-#navbar .nav {
-  height: 80px;
+#navbar .navbar {
+  min-height: 80px;
   background-color: #203d88;
 }
 
-#navbar .nav li a {
+#navbar .navbar-brand {
+ padding: 0 15px;
+ height: 80px;
+ line-height: 80px;
+ color: #fff;
+}
+
+#navbar .navbar-toggle {
+  margin-top: 23px;
+  padding: 9px 10px !important;
+}
+
+#navbar .navbar-nav > li > a {
   color: #fff;
-  padding-top: 0px;
-  line-height: 80px;
+}
+
+#navbar .custom-toggler.navbar-toggler {
+    border-color: #fff;
+}
+
+#navbar .custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='#fff' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+@media (min-width: 768px) {
+  .navbar-nav > li > a {
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+    line-height: 27px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .navbar-brand {
+    padding-left: 0px !important;
+  }
 }
