@@ -69,6 +69,24 @@
   color: #2bb2ab;
 }
 
+#navbar-account {
+  margin-left: 60px;
+}
+
+#navbar-account .nav-item a {
+  padding: 0px;
+  margin: 0px;
+}
+
+#navbar #navbar-account .nav-item {
+  margin-right: 20px;
+}
+
+#mail-icon {
+  position: relative;
+  top: 1px;
+}
+
 /* Large view */
 @media (min-width: 768px) {
   #navbar .navbar-nav > li > a {
@@ -86,5 +104,17 @@
 
   #navbar .dropdown-menu {
     margin: 3px 0px;
+  }
+}
+
+/* Navbar collapse */
+@media(max-width: 991px) {
+  #navbar-account {
+    flex-direction: row;
+    margin-left: 0px;
+  }
+
+  #navbar #navbar-account .nav-item {
+    margin-right: 10px;
   }
 }
