@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Ftujio/PerfionFrontEnd/issues"
   },
-  "homepage": "https://github.com/Ftujio/PerfionFrontEnd#readme"
+  "homepage": "https://github.com/Ftujio/PerfionFrontEnd#readme",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.2"
+  }
 }
