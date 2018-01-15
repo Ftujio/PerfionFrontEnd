@@ -7,6 +7,7 @@
   min-height: 80px;
   background-color: #203d88;
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 #navbar .navbar-brand {
@@ -46,7 +47,7 @@
   padding: 0px;
 }
 
-#navbar .navbar-nav > .nav-item {
+#navbar .navbar-nav > .nav-item:not(:last-child) {
   margin-right: 30px;
 }
 
