@@ -1,3 +1,17 @@
 #page-wrapper .container-fluid {
   padding: 0px;
 }
+
+#page-wrapper {
+  width: 1600px;
+  margin: 0px auto;
+}
+
+#navbar .nav {
+  height: 80px;
+  background-color: #203d88;
+}
+
+#navbar .nav li a {
+  color: #fff;
+}
