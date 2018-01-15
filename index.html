@@ -1,0 +1,73 @@
+<html>
+    <head>
+      <!-- Load Bootstrap -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+      <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <!-- Load Custom CSS -->
+        <link rel="stylesheet" href="css/sidebar.css">
+        <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.css">  
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">    
+    </head>
+    <body>
+        <div class="wrapper">
+            
+                <!-- Sidebar -->
+                <div class="container-fluid">
+                    <div class="row">
+                      <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
+                        <!--
+                        <input type="text" name="search" id="search" placeholder="Search">
+                        -->
+                       
+                        <div class="inner-addon right-addon">
+                            <img class="glyphicon" src="icons/search.svg">
+                            <input type="text" id="search" placeholder="Search" />
+                        </div>
+
+                        <div class="dropdown show">
+                          <a class="btn btn-secondary nasko" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Categories
+                          </a>
+                        
+                          <div class="dropdown-menu sub-cat" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item nasko2" href="#">
+                              <span>...</span>
+                              <span class="cars">Cars</span>
+                            </a>
+                          </div>
+                        </div>
+                        <br/><br/>
+                        <ul class="nav nav-pills flex-column">
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="icons/folder.svg">BMW </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="icons/folder.svg">Peugeot</a>
+                          </li>
+                          <li class="nav-item ">
+                            <a class="nav-link activated" href="#"><img src="icons/folder-active.svg">Audi</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#"><img src="icons/folder.svg">Volvo</a>
+                          </li>
+                          <li class="nav-item">
+                             <a class="nav-link" href="#"><img src="icons/folder.svg">Mercedes</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#"><img src="icons/folder.svg">Toyota</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#"><img src="icons/tag.svg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Untagged</a>
+                            </li>
+                        </ul> 
+                      </nav>
+                    </div>
+                </div>
+                <!-- Page Content -->
+                
+            </div>      
+    </body>
+
+</html>
