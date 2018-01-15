@@ -103,18 +103,43 @@ input#search {
      margin-top: -10px;
      border-radius: 0;
      line-height: 15px;
-     
+     position: relative;
  }
 
  .nasko2:before {
     font-family: FontAwesome;
-    content: "\f161";
+    content: url("../icons/sort.png");
  }
 
- .dropdown-item span.cars {
-     border: 1px solid red;
-     width: 60%;
+ span.dots {
+    position: absolute;
+    height: 90%;
+    z-index: 2;
+    width: 20%;
+    border-radius: 15px;
+    border: 2px solid #e4e6e8;
+}
 
+span.dots h4 {
+    margin-top: -21px;
+    padding-left: 6px;
+    color:#74767a;
+    font-size: 40px;
+    height: 20px;
+}
+
+ span.cars {
+    /* border: 1px solid red;*/
+    display: block;
+    width: 45%;
+    color:#74767a;
+    border-radius: 15px;
+    background: #d5d6d8;
+    float: left;
+    position: absolute;
+    padding-left: 25%;
+    z-index: 1;
+    font-weight: bold;
  }
  
  .dropdown-item:before {
