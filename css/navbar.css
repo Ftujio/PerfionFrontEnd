@@ -12,7 +12,8 @@
 
 #navbar .navbar-brand {
  padding: 0px;
- width: 15%;
+ width: 17%;
+ margin-right: 0px;
  height: 80px;
  line-height: 80px;
 }
