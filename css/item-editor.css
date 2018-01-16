@@ -1,1 +1,11 @@
+#item-editor {
+  padding: 20px;
+}
 
+#item-editor .container-fluid {
+  background-color: white;
+}
+
+#item-editor h2 {
+
+}
