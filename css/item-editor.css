@@ -5,8 +5,25 @@
 #item-editor .container-fluid {
   background-color: white;
   border-radius: 5px;
+  min-height: 300px;
 }
 
-#item-editor h2 {
-
+#item-editor-header {
+  padding-top: 15px !important;
+  padding-left: 30px !important;
+  background-color: #203d88;
+  color: #fff;
+  border-radius: 5px 5px 0px 0px;
 }
+
+#close-button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  background-color: #1d3676;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 20px;
+}
+
+#close-button a { color: #fff }
