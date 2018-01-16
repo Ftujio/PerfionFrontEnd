@@ -89,7 +89,7 @@ input#search {
 /* 
  ====== Submenu - Categories ====== 
  */
- .dropdown-menu a {
+ .sub-cat a {
     color: #42454b;
     height: 35px;
     font-family: 'Fira Sans', sans-serif;
