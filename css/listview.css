@@ -1,60 +1,17 @@
+
+
 #header-tops {
-    height: 150px;
+    height: 80px;
     margin: 0 auto;
-    background-color: #ff0000;
+    background-color: #e4e6e8;
 }
 
 .nasko3 {
     padding: 20px;
 }
 
-span.breadcrumbs1 {
-    position: absolute;
-    height: 30px;
-    z-index: 2;
-    width: 70px;
-    border-radius: 15px;
-    border: 2px solid #e4e6e8;
-    background: #d5d6d8;
-}
-
-span.breadcrumbs1 h4 {
-    color:#74767a;
-    font-size: 15px;
-    height: 20px;
-    line-height: 15px;
-    vertical-align: middle
-}
-
-span.breadcrumbs1 h2 {
-    color:#74767a;
-    font-size: 25px;
-    height: 20px;
-    line-height: 5px;
-    padding-left:  10px;
-}         
-
-
- span.breadcrumbs2 {
-    position: absolute;
-    width: 150px;
-    height: 30px;
-    color:#74767a;
-    border-radius: 15px;
-    background: #d5d6d8;   
- }
-
- span.breadcrumbs2 h4 { 
-    color:#74767a;
-    font-size: 15px;
-    height: 20px;
-    line-height: 28px;
-    float: right;
-    padding-right: 10px;
-}
-
-h2, h4 {
-    display: inline; 
+.nasko3 .breadcrumb-el {
+    border: 2px solid #dcdee0
 }
 
 /* 
@@ -89,3 +46,150 @@ ul.rightIcons li {
     float: left;
     padding-left: 10px; 
 }
+
+/* 
+     ====== SEARCH ======
+*/
+
+input#searchGrid {
+    border: none;
+    width: 95%;
+    height: 34px;
+    border-radius: 32px; 
+    background: #fff;
+    font-family: 'Fira Sans', sans-serif;
+    padding-left: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.inner-addon-search {
+    position: relative;
+  }
+  
+
+  .inner-addon-search .glyphicon {
+    position: absolute;
+    padding-right: 10px;
+    padding-top: 12px;
+    pointer-events: none;
+  }
+
+    /* align glyph */
+    .right-addon-search .glyphicon { right: 0px;}
+    
+/* 
+     ====== END SEARCH ======
+*/
+    
+/*
+    ====== EDIT BUTTON ======    
+*/
+
+.edit {
+    background: #b7b8ba;
+    color: #FFF;
+    height: 34px;
+}
+
+.edit-arrow {
+    background: #b7b8ba;
+    border-left: 1px solid white;
+    color: #FFF;
+    height: 34px;
+}
+
+/*
+    ====== NEW ITEM BUTTON ======    
+*/
+
+.new-item {
+    background: #203d88;
+    color: #FFF;
+    height: 34px;
+}
+
+.new-item-arrow {
+    background: #203d88;
+    border-left: 1px solid white;
+    color: #FFF;
+    height: 34px;
+}
+
+hr {
+    clear: both;
+    width: 100%;
+    margin-top: 50px;
+}
+
+/*
+    ====== TABLE HEADER ======    
+*/
+
+ul.header {
+    list-style-type: none;
+    overflow-x: auto;
+}
+
+ul.header li {
+    float: left;
+}
+
+ul.header li .small_column {
+    width: 10%;
+}
+
+ul.header li .middle_column {
+    width: 15%;
+}
+
+ul.header li .big_column {
+    width: 20%;
+}
+
+ul.header li {
+    border: 1px solid green;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+table.table {
+    margin-top: -15px;
+    font-size: 13px;
+    font-weight: 300;
+}
+
+table.table th {
+    background: #e4e6e8;
+    border-top: none
+}
+
+table.table tr {
+    background: #FFF;
+    border: 1px solid #e4e6e8;
+}
+
+table.table tr td {
+    vertical-align: middle
+}
+
+.circleGreen:before, .circleRed:before {
+    content: ' \25CF';
+    font-size: 20px;
+  }
+
+  .circleGreen:before {
+      color: green;
+  }
+
+  .circleRed:before {
+      color: red;
+  }
+
+  .progress, .progress-bar {
+      height: 7px;
+  }
+
+  .progress-bar  {
+    background: #24b2ab
+  }

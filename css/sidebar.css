@@ -12,7 +12,6 @@ body {
 
 input#search {
     border: none;
-    background: blue;
     width: 95%;
     height: 35px;
     border-radius: 32px; 

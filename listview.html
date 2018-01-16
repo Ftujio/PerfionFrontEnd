@@ -8,6 +8,9 @@
 
   <!-- FONTS -->
   <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+  <link href="  https://fonts.googleapis.com/css?family=Fira+Sans:light" rel="stylesheet">
+  <link href="  https://fonts.googleapis.com/css?family=Fira+Sans:regular" rel="stylesheet">
+
 
   <!-- CSS -->
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
@@ -145,26 +148,230 @@
             </nav>
             <div class="col-sm-9 col-md-10" style="padding: 0; margin:0;">
                 <div id="header-tops">
+                    <!--  
                     <div class="nasko3">
                         <span class="breadcrumbs1"><h2>...</h2><h4>Audi</h4></span>
                         <span class="breadcrumbs2"><h4>Audi A4</h4></span>
                     </div>
-                    <br/> <br/>
-                    <div class="header-bottom">
+                    -->
+                    <div class="nasko3">
+                    <ul class="breadcrumbs">
+                        <li class="breadcrumb-el breadcrumb-root" style="z-index: 2"><span>...</span>&nbsp;Audi</li>
+                        <li class="breadcrumb-el breadcrumb-next" style="z-index: 1">Audi A4</li>
+                    </ul>
+                    </div>
+                </div>
+                <div class="header-bottom">
                         <div class="left-side">
                             <h3>Products</h3>
                             <img src="icons/refresh.png">
                         </div>
                         <div class="right-side">
                             <ul class="rightIcons">
-                                <li>one</li>
-                                <li>two</li>
-                                <li>three</li>
-                                <li>four</li>
+                                <li>
+                                    <div class="inner-addon-search right-addon-search">
+                                        <img class="glyphicon" src="icons/searchArrow.png">
+                                        <input type="text" id="searchGrid" placeholder="Search" />
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn edit">Edit</button>
+                                        <button type="button" class="btn edit-arrow dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img src="icons/trash_ph.png">
+                                </li>
+                                <li>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn new-item">New item</button>
+                                        <button type="button" class="btn new-item-arrow dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <span class="sr-only">Toggle Dropdown</span>
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#">Action</a>
+                                            <a class="dropdown-item" href="#">Another action</a>
+                                            <a class="dropdown-item" href="#">Something else here</a>
+                                            <div class="dropdown-divider"></div>
+                                            <a class="dropdown-item" href="#">Separated link</a>
+                                        </div>
+                                    </div>
+                                </li>
                             </ul>
                         </div>
                     </div>
+                    <hr>
+                    <!-- 
+                    <ul class="header">
+                        <li class="small_column"><input type="checkbox"></li>
+                        <li class="small_column"></li>
+                        <li class="big_column">Product</li>
+                        <li class="middle_column">Item No</li>
+                        <li class="big_column">Image</li>
+                        <li class="middle_column">Readness</li>
+                        <li class="small_column">Ready</li>
+                        <li class="big_column">Description</li>
+                        <li class="middle_column">Engine Power</li>
+                        <li class="middle_column">Engine Volume</li>
+                        <li class="middle_column">Manufactor</li>
+                    </ul>
+                     -->
+                     <table class="table">
+                            <thead>
+                                <tr> 
+                                    <th><input type="checkbox"></th> 
+                                    <th></th> 
+                                    <th>Product</th> 
+                                    <th>Item No</th> 
+                                    <th>Image</th> 
+                                    <th>Readness</th> 
+                                    <th>Ready</th> 
+                                    <th>Description</th> 
+                                    <th>Engine Power</th> 
+                                    <th>Engine Volume</th> 
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td scope="row"><input type="checkbox"></td>
+                                    <td> Supported</td>
+                                    <td> Audi A4 1.8 TFSI</td>
+                                    <td>AUA4L18TFS</td>
+                                    <td><img src="icons/cars/1.png" class="img-responsive"></td>
+                                    <td><div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                                              <span class="sr-only">60% Complete</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="circleGreen"></span></td>
+                                    <td> Sed malesuada congue sollicitudin. Sed iaculis elementum auctor. Integer nec aliquam eros. Fusce non tristique 
+                                            eu pharetra sapien …
+                                            mollis tellus, tempus eleifend odio. Nunc eleifend ante arcu, vel blandit mi accumsan non.</td>
+                                    <td> 1.800</td>
+                                    <td>1.8</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><input type="checkbox"></td>
+                                    <td> Supported</td>
+                                    <td> Audi A4 1.8 TFSI</td>
+                                    <td>AUA4L18TFS</td>
+                                    <td><img src="icons/cars/2.png" class="img-responsive"></td>
+                                    <td><div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width:25%">
+                                              <span class="sr-only">25% Complete</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="circleRed"></span></td>
+                                    <td> </td>
+                                    <td> 1.800</td>
+                                    <td>1.8</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><input type="checkbox"></td>
+                                    <td> Supported</td>
+                                    <td> Audi A4 1.8 TFSI</td>
+                                    <td>AUA4L18TFS</td>
+                                    <td><img src="icons/cars/3.png" class="img-responsive"></td>
+                                    <td><div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                              <span class="sr-only">90% Complete</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="circleRed"></span></td>
+                                    <td></td>
+                                    <td> 1.800</td>
+                                    <td>1.8</td>
+                                    </tr>
+                                <tr>
+                                    <td scope="row"><input type="checkbox"></td>
+                                    <td> Supported</td>
+                                    <td> Audi A4 1.8 TFSI</td>
+                                    <td>AUA4L18TFS</td>
+                                    <td><img src="icons/cars/4.png" class="img-responsive"></td>
+                                    <td><div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                                              <span class="sr-only">90% Complete</span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="circleRed"></span></td>
+                                    <td></td>
+                                    <td> 1.800</td>
+                                    <td>1.8</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><input type="checkbox"></td>
+                                    <td> Supported</td>
+                                    <td> Audi A4 1.8 TFSI</td>
+                                    <td>AUA4L18TFS</td>
+                                    <td><img src="icons/cars/5.png" class="img-responsive"></td>
+                                    <td><div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:55%">
+                                             
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="circleGreen"></span></td>
+                                    <td></td>
+                                    <td> 1.800</td>
+                                    <td>1.8</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><input type="checkbox"></td>
+                                    <td> Supported</td>
+                                    <td> Audi A4 1.8 TFSI</td>
+                                    <td>AUA4L18TFS</td>
+                                    <td></td>
+                                    <td><div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:48%">
+                                             
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="circleGreen"></span></td>
+                                    <td> Sed malesuada congue sollicitudin. Sed iaculis elementum auctor. Integer nec aliquam eros. Fusce non tristique 
+                                            eu pharetra sapien …
+                                            mollis tellus, tempus eleifend odio. Nunc eleifend ante arcu, vel blandit mi accumsan non.</td>
+                                    <td> 1.800</td>
+                                    <td>1.8</td>
+                                </tr>
+                                <tr>
+                                    <td scope="row"><input type="checkbox"></td>
+                                    <td> Supported</td>
+                                    <td> Audi A4 1.8 TFSI</td>
+                                    <td>AUA4L18TFS</td>
+                                    <td></td>
+                                    <td><div class="progress">
+                                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width:48%">
+                                             
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td><span class="circleGreen"></span></td>
+                                    <td> Sed malesuada congue sollicitudin. Sed iaculis elementum auctor. Integer nec aliquam eros. Fusce non tristique 
+                                            eu pharetra sapien …
+                                            mollis tellus, tempus eleifend odio. Nunc eleifend ante arcu, vel blandit mi accumsan non.</td>
+                                    <td> 1.800</td>
+                                    <td>1.8</td>
+                                </tr>
+                              
+                            </tbody>
+                        </table>
                 </div>
+                
             </div>
         </div>
     </div>

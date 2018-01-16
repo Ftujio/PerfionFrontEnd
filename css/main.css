@@ -76,6 +76,9 @@ h2, h4 {
 .breadcrumb-root span {
   position: relative;
   top: -3px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-size: 17px;
 }
 
 .breadcrumb-next {
