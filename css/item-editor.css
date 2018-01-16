@@ -27,3 +27,7 @@
 }
 
 #close-button a { color: #fff }
+
+#item-editor-breadcrumbs {
+  margin: 20px;
+}

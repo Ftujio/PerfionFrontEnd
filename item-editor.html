@@ -21,6 +21,7 @@
 
     <div class="container-fluid">
       <div class="row">
+        <!-- NAVBAR -->
         <div class="col" id="navbar">
           <nav class="navbar navbar-expand-lg">
             <a class="navbar-brand" href="#"><img src="icons/perfion-logo.svg" alt="logo" width="137" height="30"></a>
@@ -95,6 +96,7 @@
       </div>
 
       <div class="row">
+        <!-- SIDEBAR -->
         <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
           <div class="inner-addon right-addon">
               <img class="glyphicon" src="icons/search.svg">
@@ -139,12 +141,23 @@
           </ul>
         </nav>
 
+        <!-- ITEM EDITOR -->
         <div id="item-editor" class="col-lg-10 col-sm-9 col-md-10 col-xs-12">
           <div class="container-fluid">
             <div class="row" id="item-editor-header">
               <div class="col">
                 <h3 class="float-left">Audi A4 1.8 TFSI</h3>
                 <div class="float-right" id="close-button"><a href="">x</a></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col" id="item-editor-breadcrumbs">
+                <ul class="breadcrumbs">
+                  <li class="breadcrumb-el breadcrumb-root" style="z-index: 10"><span>...</span> Audi</li>
+                  <li class="breadcrumb-el breadcrumb-next" style="z-index: 9">Audi A4</li>
+                  <li class="breadcrumb-el breadcrumb-next" style="z-index: 8; left: -60px">Audi A4 1.8 TFSI</li>
+                </ul>
               </div>
             </div>
           </div>
