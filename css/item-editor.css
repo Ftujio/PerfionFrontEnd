@@ -29,5 +29,26 @@
 #close-button a { color: #fff }
 
 #item-editor-breadcrumbs {
-  margin: 20px;
+  margin: 20px 0px 10px 20px;
+}
+
+#toolbar {
+  margin-top: 20px;
+}
+
+#toolbar img {
+  background-color: #b7b8ba;
+  padding: 5px 7px;
+  border-radius: 4px;
+}
+
+#toolbar button {
+  width: 71px;
+  height: 30px;
+  background-color: #203d88;
+  color: #fff;
+  border-radius: 4px;
+  border: none;
+  margin-left: 6px;
+  margin-right: 20px;
 }
