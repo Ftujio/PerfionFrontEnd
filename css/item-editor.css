@@ -4,6 +4,7 @@
 
 #item-editor .container-fluid {
   background-color: white;
+  border-radius: 5px;
 }
 
 #item-editor h2 {
