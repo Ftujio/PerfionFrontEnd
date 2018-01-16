@@ -52,3 +52,23 @@
   margin-left: 6px;
   margin-right: 20px;
 }
+
+#general-info-section {
+  overflow: hidden;
+  list-style-type: none;
+  padding-left: 0px;
+  border-bottom: 2px solid #2f4c98;
+  background: linear-gradient(to bottom, #fff, #f2f3f3);
+}
+
+#general-info-section li {
+  float: left;
+  padding-left: 30px;
+  padding-bottom: 10px;
+  color: #c3c6c9;
+}
+
+#general-info-section li:first-child {
+  color: #2f4c98;
+  font-weight: bold;
+}
