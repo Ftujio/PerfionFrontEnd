@@ -19,7 +19,7 @@ input#search {
     background: #e4e6e8;
     font-family: 'Fira Sans', sans-serif;
     padding-left: 10px;
-    margin-bottom: 10px;
+    margin: 5px;
     font-size: 14px;
 }
 
@@ -48,6 +48,11 @@ input#search {
 /*
  ====== Drop Down Categories ======
 */
+
+.nasko {
+    margin: 5px;
+    border: none
+}
 .dropdown a.btn{
     width: 100%;
     height: 40px;
@@ -87,11 +92,21 @@ input#search {
      padding: 0;
  }
 /* 
- ====== Submenu - Categories ====== 
+ ====== BREADCRUMBS ====== 
  */
+
+ .sub-cat {
+    border-radius: 0;
+    line-height: 15px;
+    position: relative;
+    margin-top: 0;
+    border: none;
+    width: 100.2%
+}
+
  .sub-cat a {
     color: #42454b;
-    height: 35px;
+    height: 37px;
     font-family: 'Fira Sans', sans-serif;
     font-size: 14px;
     background: #e4e6e8;
@@ -99,12 +114,7 @@ input#search {
     line-height: 30px;
  }
 
- .sub-cat {
-     margin-top: -10px;
-     border-radius: 0;
-     line-height: 15px;
-     position: relative;
- }
+
 
  .nasko2:before {
     font-family: FontAwesome;
@@ -113,7 +123,7 @@ input#search {
 
  span.dots {
     position: absolute;
-    height: 90%;
+    height: 82%;
     z-index: 2;
     width: 20%;
     border-radius: 15px;
