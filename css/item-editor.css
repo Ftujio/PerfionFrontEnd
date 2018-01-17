@@ -348,4 +348,13 @@ p {
     margin-bottom: 10px;
   }
 
+  #tabs ul {
+    border: none;
+  }
+
+  #tabs .nav-item:last-child {
+    margin-top: 3px;
+    margin-left: 0px;
+  }
+
 }
