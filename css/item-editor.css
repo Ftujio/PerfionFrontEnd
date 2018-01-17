@@ -292,12 +292,16 @@ p {
 @media (max-width: 576px) {
 
   #item-editor-breadcrumbs {
-    margin: 10px 0px 10px 10px;
-    /* margin: 0; */
+    margin: 10px 0px 0px 10px;
   }
 
   #item-editor-breadcrumbs ul li {
     font-size: 13px;
+  }
+
+  #toolbar {
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 
 }
