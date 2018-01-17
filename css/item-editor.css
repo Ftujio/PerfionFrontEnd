@@ -166,14 +166,18 @@ p {
   width: 100%;
 }
 
+#special-row input, #special-row select {
+  width: 93%;
+}
+
 .language-form-group-cars {
-  width: 280px;
+  width: 95%;
   margin: 0px auto;
   padding: 20px;
 }
 
 .item-editor-form-group {
-  width: 300px;
+  width: 90%;
   height: 70px;
   padding: 10px;
 }
@@ -193,6 +197,10 @@ p {
 .special-row-child .item-editor-form-group {
   padding-left: 4px;
   width: 93%;
+}
+
+.special-row-child .item-editor-form-group input, .special-row-child .item-editor-form-group select {
+  width: 90%;
 }
 
 #language-form-group-cars-tall .language-form-group-cars-tall-row {
@@ -275,25 +283,81 @@ p {
 }
 
 .input-data-type-left {
-  left: 10px;
   padding-left: 15px;
 }
 
 .input-data-type-right {
-  right: 10px;
-  padding-right: 12px;
+
 }
 
 .input-with-type input {
-  padding-top: 8px;
+
 }
 
 /* RESPONSIVE */
 
+@media (min-width: 1024px) {
+
+  .input-data-type-left {
+    left: 10px;
+    padding-left: 15px;
+  }
+
+  .input-data-type-right {
+    right: 10px;
+    padding-right: 12px;
+  }
+
+  #special-row .language-form-group {
+    margin-left: -22px;
+  }
+
+  #special-row .item-editor-form-group {
+    margin-left: -25px;
+  }
+
+  #language-form-group-cars-tall .language-form-group-cars-tall-row:nth-child(2) img:nth-child(1) {
+    margin-right: 5px;
+  }
+
+}
+
 @media (max-width: 1024px) {
+
+  .input-right {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  .input-data-type-left {
+    left: 10px;
+    padding-left: 15px;
+  }
+
+  .input-data-type-right {
+    left: 10px;
+    padding-left: 12px;
+  }
 
   #language-section .language-form-group {
     width: 90%;
+    margin-right: 5px;
+  }
+
+  #special-row .language-form-group-cars img {
+    width: 60px;
+    margin-right: 5px;
+  }
+
+  #special-row .language-form-group {
+    margin-left: -10px;
+  }
+
+  #special-row .item-editor-form-group {
+    margin-left: -14px;
+  }
+
+  #language-form-group-cars-tall .language-form-group-cars-tall-row:nth-child(2) img:nth-child(1) {
     margin-right: 5px;
   }
 
@@ -312,6 +376,26 @@ p {
 
   #language-section .language-form-group input, #language-section .language-form-group select {
     font-size: 13px;
+  }
+
+  #special-row .language-form-group {
+    margin-left: -4px;
+  }
+
+  #special-row .item-editor-form-group {
+    margin-left: -8px;
+  }
+
+  #special-row .language-form-group-cars {
+    display: none;
+  }
+
+  #special-row {
+    display: none;
+  }
+
+  .item-editor-form-group {
+    width: 100%;
   }
 
 }
@@ -354,8 +438,7 @@ p {
   }
 
   #tabs .nav-item:last-child {
-    margin-top: 3px;
-    margin-left: 0px;
+    display: none;
   }
 
 }
