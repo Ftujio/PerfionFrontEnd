@@ -1,3 +1,8 @@
+p {
+  margin: 0;
+  padding: 0;
+}
+
 #item-editor {
   padding: 20px !important;
 }
@@ -73,15 +78,14 @@
   font-weight: bold;
 }
 
-#language-section {
-
+#language-section p {
+  padding-top: 23px;
 }
 
 .form-label {
-  padding-top: 23px;
-  padding-left: 30px;
   color: #7f7f7f;
   font-weight: bold;
+  padding-left: 30px;
 }
 
 .language-form-group {
@@ -93,22 +97,28 @@
 
 .item-editor-select, .item-editor-input {
   display: block;
-  width: 100%;
   height: 50px;
-  margin: auto;
   border-radius: 4px;
   border: 1px solid #a5a5a7;
   color: #7f7f7f;
   font-size: 15px;
 }
 
-.language-form-group select {
-  margin-bottom: 10px;
+.item-editor-input {
+  padding-left: 15px;
+}
+
+.item-editor-select {
   padding-left: 10px;
 }
 
-.language-form-group input {
-  padding-left: 15px;
+#language-section input, #language-section select {
+  width: 100%;
+  margin: auto;
+}
+
+#language-section select {
+  margin-bottom: 10px;
 }
 
 #tabs-section {
@@ -141,4 +151,53 @@
 #tabs-settings-icon {
   line-height: 40px;
   margin-right: 30px;
+}
+
+#tabs-content {
+  margin-top: 25px;
+}
+
+#tabs-content p {
+  line-height: 70px;
+}
+
+#tabs-content input, #tabs-content select {
+  width: 100%;
+}
+
+.language-form-group-cars {
+  width: 280px;
+  margin: 0px auto;
+  padding: 20px;
+}
+
+.item-editor-form-group {
+  width: 300px;
+  height: 70px;
+  padding: 10px;
+}
+
+#special-row .item-editor-img {
+  margin-right: 15px;
+}
+
+#special-row .special-row-child p {
+  padding-left: 45px;
+}
+
+#special-row .language-form-group-cars {
+  margin-left: 4px;
+}
+
+.special-row-child .item-editor-form-group {
+  padding-left: 4px;
+  width: 93%;
+}
+
+#language-form-group-cars-tall .language-form-group-cars-tall-row {
+  margin-bottom: 10px;
+}
+
+#language-form-group-cars-tall .language-form-group-cars-tall-row:nth-child(2) img:nth-child(1) {
+  margin-right: 20px;
 }
