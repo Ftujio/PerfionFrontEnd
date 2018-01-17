@@ -286,3 +286,18 @@ p {
 .input-with-type input {
   padding-top: 8px;
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 576px) {
+
+  #item-editor-breadcrumbs {
+    margin: 10px 0px 10px 10px;
+    /* margin: 0; */
+  }
+
+  #item-editor-breadcrumbs ul li {
+    font-size: 13px;
+  }
+
+}
