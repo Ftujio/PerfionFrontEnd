@@ -62,6 +62,7 @@ p {
   overflow: hidden;
   list-style-type: none;
   padding-left: 0px;
+  padding-bottom: 5px;
   border-bottom: 2px solid #2f4c98;
   background: linear-gradient(to bottom, #fff, #f2f3f3);
 }
@@ -302,6 +303,14 @@ p {
   #toolbar {
     margin-top: 10px;
     margin-bottom: 20px;
+  }
+
+  #general-info-section {
+    font-size: 13px;
+  }
+
+  #general-info-section li:first-child {
+    padding-left: 12px;
   }
 
 }
