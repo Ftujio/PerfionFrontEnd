@@ -173,6 +173,10 @@ table.table tr td {
     vertical-align: middle
 }
 
+table.table tr td.brand {
+    font-weight: 700;
+}
+
 .circleGreen:before, .circleRed:before {
     content: ' \25CF';
     font-size: 20px;
@@ -192,4 +196,8 @@ table.table tr td {
 
   .progress-bar  {
     background: #24b2ab
+  }
+
+  .brandIcon img{
+      margin-top: -5px;
   }
