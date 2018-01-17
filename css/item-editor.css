@@ -201,3 +201,48 @@ p {
 #language-form-group-cars-tall .language-form-group-cars-tall-row:nth-child(2) img:nth-child(1) {
   margin-right: 20px;
 }
+
+.item-editor-section-heading {
+  margin-top: 10px;
+  padding-left: 30px;
+  height: 40px;
+  background: linear-gradient(to bottom, #fff, #f2f3f3);
+  border-bottom: 1px solid #e3e3e4;
+}
+
+.item-editor-section-heading h3 {
+  font-size: 19px;
+  font-weight: bold;
+  color: #2f4c98;
+  line-height: 40px;
+}
+
+.item-editor-form-group .progress {
+  background-color: #caecea;
+  height: 12px;
+  border-radius: 20px;
+  margin-top: 17px;
+}
+
+.item-editor-form-group .progress-bar {
+  background-color: #2bb2ab;
+}
+
+.red-dot {
+  width: 12px;
+  height: 12px;
+  background-color: #c13351;
+  border-radius: 6px;
+  margin-top: 17px;
+}
+
+#date-picker {
+  position: relative;
+}
+
+#date-picker img {
+  position: absolute;
+  right: 11px;
+  top: 11px;
+  padding: 14px;
+}
