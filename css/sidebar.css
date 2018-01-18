@@ -51,20 +51,26 @@ input#search {
 */
 
 .nasko {
-    margin: 5px;
+    /* margin: 5px; */
     border: none;
 }
+
 .dropdown a.btn{
     width: 90%;
     height: 40px;
     border-radius: 0;
     background: #203d88;
     color: #FFF;
-    margin-left: 10px;
+    /* margin-left: 9px; */
     text-align: left;
     font-family: 'Fira Sans', sans-serif;
     font-size: 14px;
     line-height: 25px;
+}
+
+.dropdown a.btn{
+    display: block;
+    margin: 0 auto;
 }
 
 .dropdown a.btn:active, .dropdown a.btn:visited, .dropdown a.btn:focus {
@@ -86,12 +92,12 @@ input#search {
      text-align: center;
      width: 1em;
  }
-
- #nasko_drop {
+/* 
+ #dropdrown_menus {
      width: 90%;
      margin: 0;
      padding: 0;
- }
+ } */
 /* 
  ====== BREADCRUMBS ====== 
  */
@@ -102,7 +108,9 @@ input#search {
     position: relative;
     margin-top: 0;
     border: none;
-    width: 90%
+    width: 90%;
+    margin: 0 auto;
+    
 }
 
  .sub-cat a {
@@ -113,6 +121,8 @@ input#search {
     background: #e4e6e8;
     padding-left: 5px;
     line-height: 30px;
+    width: 100%;
+    margin: 0 auto
     
  }
 
