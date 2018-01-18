@@ -1,4 +1,15 @@
+.row-eq-height {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display:         flex;
+  }
 
+  [class*="col-"] {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    
+  }
 
 #header-tops {
     height: 80px;
@@ -35,16 +46,19 @@
 
 .right-side {
     float: right;
-    padding-right: 10px;
+    padding-right: 35px;
+
 }
 
 ul.rightIcons {
-    list-style-type: none;
+    list-style-type: none; 
+    margin: 0;
+    padding: 0
 }
 
 ul.rightIcons li {
     float: left;
-    padding-left: 10px; 
+    padding-left: 10px;  
 }
 
 /* 
@@ -61,6 +75,7 @@ input#searchGrid {
     padding-left: 10px;
     margin-left: 10px;
     font-size: 14px;
+    
 }
 
 .inner-addon-search {
@@ -77,6 +92,8 @@ input#searchGrid {
 
     /* align glyph */
     .right-addon-search .glyphicon { right: 0px;}
+
+    
     
 /* 
      ====== END SEARCH ======
@@ -90,7 +107,15 @@ input#searchGrid {
     background: #b7b8ba;
     color: #FFF;
     height: 34px;
+    font-size: 14px;
+    padding-right: 25px;
+    outline: none
 }
+
+.btn:focus,.btn:active {
+    outline: none !important;
+    box-shadow: none;
+ }
 
 .edit-arrow {
     background: #b7b8ba;
@@ -107,6 +132,9 @@ input#searchGrid {
     background: #203d88;
     color: #FFF;
     height: 34px;
+    font-size: 14px;
+    padding-right: 25px;
+    outline: none
 }
 
 .new-item-arrow {
@@ -115,6 +143,15 @@ input#searchGrid {
     color: #FFF;
     height: 34px;
 }
+
+.dropdown-menu {
+    font-size: 13px;
+}
+
+.new-item:focus,.new-item:active {
+    outline: none !important;
+    box-shadow: none;
+ }
 
 hr {
     clear: both;
@@ -148,7 +185,6 @@ ul.header li .big_column {
 }
 
 ul.header li {
-    border: 1px solid green;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -157,16 +193,22 @@ table.table {
     margin-top: -15px;
     font-size: 13px;
     font-weight: 300;
+    
 }
 
 table.table th {
     background: #e4e6e8;
-    border-top: none
+    border-top: none;
+    font-weight: 400;
+    color: #42454b
 }
 
 table.table tr {
     background: #FFF;
-    border: 1px solid #e4e6e8;
+    border-top: 1px solid #e4e6e8;
+    border-bottom: 1px solid #e4e6e8;
+    border-left: 5px solid #e4e6e8;
+    border-right: 5px solid #e4e6e8;
 }
 
 table.table tr td {
@@ -200,4 +242,55 @@ table.table tr td.brand {
 
   .brandIcon img{
       margin-top: -5px;
+  }
+
+
+  @media(max-width: 991px) {
+
+
+    .header-bottom {
+        padding-left: 12px;
+    }
+    
+    .right-side {
+        clear: both;
+        float: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    ul.rightIcons {
+        list-style-type: none; 
+        margin-left: -10px;
+        margin-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+
+    ul.rightIcons li {
+        float: left;
+         padding-top: 10px; 
+         padding-left: 4px;
+         padding-bottom: 10px;
+    }
+ 
+    ul.rightIcons li:not(:first-child) {
+        margin-left: 10px;
+        padding-top: 10px;
+    } 
+
+    input#searchGrid {
+        
+        border: none;
+        width: 110px;
+        height: 34px;
+        border-radius: 32px; 
+        background: #fff;
+        font-family: 'Fira Sans', sans-serif;
+        padding-left: 10px;
+        margin-left: 10px;
+
+        font-size: 14px;
+    }
+
   }

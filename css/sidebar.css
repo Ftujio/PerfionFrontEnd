@@ -2,9 +2,11 @@ body {
     background: #e4e6e8;
 }
 .sidebar {
-    height: 100vh;
+    /*height: 100vh;*/
     background: white;
 }
+
+
 
 /*
  ====== SEARCH ======
@@ -12,7 +14,7 @@ body {
 
 input#search {
     border: none;
-    width: 95%;
+    width: 90%;
     height: 35px;
     border-radius: 32px; 
     background: #e4e6e8;
@@ -32,7 +34,7 @@ input#search {
   /* style glyph */
   .inner-addon .glyphicon {
     position: absolute;
-    padding-right: 10px;
+    padding-right: 25px;
     padding-top: 8px;
     pointer-events: none;
   }
@@ -53,7 +55,7 @@ input#search {
     border: none;
 }
 .dropdown a.btn{
-    width: 95%;
+    width: 90%;
     height: 40px;
     border-radius: 0;
     background: #203d88;
@@ -85,8 +87,8 @@ input#search {
      width: 1em;
  }
 
- .dropdown-menu {
-     width: 100%;
+ #nasko_drop {
+     width: 90%;
      margin: 0;
      padding: 0;
  }
@@ -100,7 +102,7 @@ input#search {
     position: relative;
     margin-top: 0;
     border: none;
-    width: 95%
+    width: 90%
 }
 
  .sub-cat a {
@@ -111,9 +113,8 @@ input#search {
     background: #e4e6e8;
     padding-left: 5px;
     line-height: 30px;
+    
  }
-
-
 
  .nasko2:before {
     font-family: FontAwesome;
@@ -130,11 +131,13 @@ input#search {
 }
 
 span.dots h4 {
-    margin-top: -21px;
+    margin-top: -8px;
     padding-left: 6px;
     color:#74767a;
     font-size: 40px;
     height: 20px;
+    line-height: 20px;
+    display: block
 }
 
  span.cars {
@@ -150,7 +153,7 @@ span.dots h4 {
     z-index: 1;
     font-weight: bold;
  }
- 
+
  .dropdown-item:before {
      float: right;
      font-size: 12px;
@@ -178,26 +181,46 @@ ul.nav li {
  ul.nav li a.activated {
      color: #203d88;
  }
-/*
- ul.nav li:not(:last-child) a:before {
-    content: url("../icons/folder.svg");
-    transform: scale(0.5);
-    padding-right: 10px;
-    color: #c3c6c9
+
+
+
+
+ @media(max-width: 991px) {
+
+    
+    /* SIDEBAR REMOVE FOLDER ICON */
+    ul.nav li.nav-item a img {
+        display: none
+    }
+
+    ul.nav li:last-child{
+       width: 0;
+       margin-left: -20px; 
+    }
+
+    span.dots {
+        display: none
+    }
+
+    span.cars {
+        display: block;
+        width: 45%;
+        color:#74767a;
+        border-radius: 15px;
+        background: #d5d6d8;
+        float: left;
+        position: absolute;
+        padding-left: 10%;
+        z-index: 1;
+        font-weight: bold;
+     }
  }
-/*
- ul.nav li:last-child a:before {
-    font-family: FontAwesome;
-    content: "\f02b";
-    padding-right: 10px;
-    color: #c3c6c9
+
+ @media only screen and (min-width: 350px) and (max-width: 700px)  {
+    .inner-addon .glyphicon {
+        position: absolute;
+        padding-right: 45px;
+        padding-top: 8px;
+        pointer-events: none;
+      }
  }
-*/
-/*
- ul.nav li a.activated:before {
-    font-family: FontAwesome;
-    content: "\f07b";
-    padding-right: 10px;
-    color: #203d88
- }
- */

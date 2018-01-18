@@ -1,0 +1,64 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400);
+body {
+  /* background-color:#e4e6e8; */
+  background: linear-gradient(to bottom, #d7dada, #fff);
+  -webkit-font-smoothing: antialiased;
+  font: normal 14px Roboto,arial,sans-serif;
+}
+
+
+
+.vertical-center {
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+  
+    display: flex;
+    align-items: center;
+
+  }
+
+  .container {
+      width: 400px;
+  }
+
+.form-login {
+    background-color: #fff;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    box-shadow: 4px 4px 5px #cfcfcf;
+    
+}
+.logo {
+    width: 250px;
+    margin: 0 auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.logo img {
+    width: 250px;
+}
+
+
+h4 { 
+ border:0 solid #fff; 
+ border-bottom-width:1px;
+ padding-bottom:10px;
+ text-align: center;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.btn-lgn {
+    background: #203d88
+}
