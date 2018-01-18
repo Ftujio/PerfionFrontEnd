@@ -115,11 +115,17 @@
                 Categories
             </a>
 
-            <div class="dropdown-menu sub-cat" id="nasko_drop" aria-labelledby="dropdownMenuLink">
-                <a class="dropdown-item nasko2" href="#">
-                    <span class="dots"><h4>...</h4></span>
+            <div class="sub-cat" id="nasko_drop">
+
+                <div class="dropdown-item nasko2" href="#">
+                    <span class="dropdown dots" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><h4>...</h4></span>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Root</a>
+                            <a class="dropdown-item" href="#">>> Motor Vechicles</a>
+                            <a class="dropdown-item" href="#">>> Cars</a>
+                        </div>
                     <span class="cars">Cars</span>
-                </a>
+                </div>
             </div>
             </div>
             <br/><br/>
