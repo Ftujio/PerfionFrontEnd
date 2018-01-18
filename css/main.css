@@ -60,6 +60,7 @@ h2, h4 {
   display: block;
   height: 30px;
   padding-left: 0px;
+  cursor: pointer;
 }
 
 .breadcrumb-el {
