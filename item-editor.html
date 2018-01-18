@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/item-editor.css">
+</head>
+<body>
+  <div id="page-wrapper" class="no-padding">
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- NAVBAR -->
+        <div class="col" id="navbar">
+          <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="#"><img src="icons/perfion-logo.svg" alt="logo" width="137" height="30"></a>
+            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto" id="navbar-main">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Manage</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Products</a>
+                    <a class="dropdown-item" href="#">Photos</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Output</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Catalogs</a>
+                    <a class="dropdown-item" href="#">Exports</a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Input</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Import</a>
+                    <a class="dropdown-item" href="#">Connect</a>
+                    <a class="dropdown-item" href="#">Synchronize</a>
+                    <a class="dropdown-item" href="#">Supplier Portal</a>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="dropdown-divider"></div>
+
+              <ul class="navbar-nav" id="navbar-other">
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Setup</a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Features</a>
+                    <a class="dropdown-item" href="#">Groups</a>
+                    <a class="dropdown-item" href="#">Sections</a>
+                    <a class="dropdown-item" href="#">Users</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">App</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Stats</a>
+                </li>
+              </ul>
+
+              <ul class="navbar-nav" id="navbar-account">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="icons/user.svg" alt="account" width="20" height="20"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="icons/calendar.svg" alt="calendar" width="20" height="20"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><img src="icons/mail.svg" alt="mail" width="20" height="20" id="mail-icon"></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <div class="row">
+        <!-- SIDEBAR -->
+        <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
+          <div class="inner-addon right-addon">
+              <img class="glyphicon" src="icons/search.svg">
+              <input type="text" id="search" placeholder="Search" />
+          </div>
+
+          <div class="dropdown show">
+            <a class="btn btn-secondary nasko" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Categories
+            </a>
+
+            <div class="dropdown-menu sub-cat" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item nasko2" href="#">
+                <span class="dots"><h4>...</h4></span>
+                <span class="cars">Cars</span>
+              </a>
+            </div>
+          </div>
+          <br/><br/>
+          <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="icons/folder.svg">BMW </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="icons/folder.svg">Peugeot</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link activated" href="#"><img src="icons/folder-active.svg">Audi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="icons/folder.svg">Volvo</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#"><img src="icons/folder.svg">Mercedes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><img src="icons/folder.svg">Toyota</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><img src="icons/tag.svg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Untagged</a>
+              </li>
+          </ul>
+        </nav>
+
+        <!-- ITEM EDITOR -->
+        <div id="item-editor" class="col-lg-10 col-sm-9 col-md-10 col-xs-12">
+          <div class="container-fluid">
+            <div class="row" id="item-editor-header">
+              <div class="col">
+                <h3 class="float-left">Audi A4 1.8 TFSI</h3>
+                <div class="float-right" id="close-button"><a href="">x</a></div>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-xl-6 col-lg-6 col-md-8 col-sm-12 col-12" id="item-editor-breadcrumbs">
+                <ul class="breadcrumbs">
+                  <li class="breadcrumb-el breadcrumb-root" style="z-index: 10"><span>...</span> Audi</li>
+                  <li class="breadcrumb-el breadcrumb-next" style="z-index: 9">Audi A4</li>
+                  <li class="breadcrumb-el breadcrumb-next" style="z-index: 8; left: -60px">Audi A4 1.8 TFSI</li>
+                </ul>
+              </div>
+
+              <div class="col-auto ml-auto" id="toolbar">
+                <img src="icons/trash.svg" alt="trash" width="30" height="30" class="float-left">
+                <button class="float-left">Save</button>
+              </div>
+            </div>
+
+            <ul class="row" id="general-info-section">
+              <li class="col-2 col-md-3 col-3">General Info</li>
+              <li class="col-3 col-md-3 col-3">English</li>
+              <li class="col-3 col-md-3 col-3">Deutsch</li>
+              <li class="col-3 col-md-3 col-3">Dansk</li>
+            </ul>
+
+            <div class="row" id="language-section">
+              <p class="col-lg-2 col-md-2 form-label">Product</p>
+
+              <div class="col-lg-3 col-md-3">
+                <div class="language-form-group">
+                  <select class="item-editor-select">
+                    <option value="English" selected>English</option>
+                  </select>
+                  <input type="text" value="Audi A4 1.8 TFSI" class="item-editor-input">
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-3">
+                <div class="language-form-group">
+                  <select class="item-editor-select">
+                    <option value="Deutsch" selected>Deutsch</option>
+                  </select>
+                  <input type="text" value="Audi A4 1.8 TFSI" class="item-editor-input">
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-md-3">
+                <div class="language-form-group">
+                  <select class="item-editor-select">
+                    <option value="Dansk" selected>Dansk</option>
+                  </select>
+                  <input type="text" value="Audi A4 1.8 TFSI" class="item-editor-input">
+                </div>
+              </div>
+            </div>
+
+            <div id="tabs-section">
+              <div class="row" id="tabs">
+                <ul class="nav nav-tabs col-lg-10 col-md-10 col-xs-10 col-10">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">Marketing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Images</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Colors</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Technical Specifications</a>
+                  </li>
+                </ul>
+
+                <div class="col-auto ml-auto" id="tabs-settings-icon"><img src="icons/settings.svg" alt="settings" width="20" height="20"></div>
+              </div>
+            </div>
+
+            <div id="tabs-content">
+              <div class="row">
+                <p class="col-2 col-md-3 col-5 form-label">Item number</p>
+
+                <div class="col-3 col-md-5 col-6">
+                  <div class="item-editor-form-group">
+                    <select class="item-editor-select">
+                      <option value="AUA4L18TFS">AUA4L18TFS</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row" id="special-row">
+                <div class="col-5 col-md-8">
+                  <div class="row special-row-child">
+                    <p class="col-5 col-md-5 col-4 form-label">Image</p>
+
+                    <div class="col-6 col-md-6 col-6">
+                      <div class="language-form-group language-form-group-cars">
+                        <img src="icons/drag-or-upload.png" class="item-editor-img" alt="drag or upload">
+                        <img src="icons/car1.png" alt="car" class="item-editor-img">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row special-row-child">
+                    <p class="col-5 form-label">Category</p>
+
+                    <div class="col-7">
+                      <div class="item-editor-form-group">
+                        <select class="item-editor-select">
+                          <option value="Cars">Cars</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row special-row-child">
+                    <p class="col-5 form-label">Manifacturer</p>
+
+                    <div class="col-7">
+                      <div class="item-editor-form-group">
+                        <select class="item-editor-select">
+                          <option value="Audi">Audi</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-4 col-md-4">
+                  <div class="language-form-group language-form-group-cars" id="language-form-group-cars-tall">
+                    <div class="language-form-group-cars-tall-row">
+                      <img src="icons/drag-or-upload.png" class="item-editor-img" alt="drag or upload">
+                      <img src="icons/car1.png" alt="car" class="item-editor-img">
+                    </div>
+
+                    <div class="language-form-group-cars-tall-row">
+                      <img src="icons/car1.png" alt="car" class="item-editor-img">
+                      <img src="icons/car1.png" alt="car" class="item-editor-img">
+                    </div>
+
+                    <div class="language-form-group-cars-tall-row">
+                      <img src="icons/car2.png" alt="car" class="item-editor-img">
+                      <img src="icons/car1.png" alt="car" class="item-editor-img">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row item-editor-section-heading">
+                <h3>Status</h3>
+              </div>
+
+              <div class="row">
+                <p class="col-2 col-md-3 col-5 form-label">Readiness</p>
+
+                <div class="col-7 col-md-5">
+                  <div class="item-editor-form-group">
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <p class="col-2 col-md-3 col-5 form-label">Ready</p>
+
+                <div class="col-7 col-md-5">
+                  <div class="item-editor-form-group">
+                    <div class="red-dot"></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <p class="col-2 col-md-3 col-5 form-label">Introduction date</p>
+
+                <div class="col-7 col-md-5">
+                  <div class="item-editor-form-group" id="date-picker">
+                    <img src="icons/calendar-gray.svg" alt="calendar">
+                    <input type="text" class="item-editor-input" value="04.01.2014">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row item-editor-section-heading">
+                <h3>Prices</h3>
+              </div>
+
+              <div class="row">
+                <p class="col-2 col-md-3 col-5 form-label">Sales price</p>
+
+                <div class="col-3 col-md-auto col-12">
+                  <div class="item-editor-form-group">
+                    <input type="text" class="item-editor-input input-gray input-right" value="$34.599,00">
+                  </div>
+                </div>
+
+                <div class="col-3 col-md-auto col-12">
+                  <div class="item-editor-form-group">
+                    <input type="text" class="item-editor-input input-green input-right" value="$34.599,00">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row item-editor-section-heading">
+                <h3>Performance</h3>
+              </div>
+
+              <div class="row">
+                <p class="col-2 col-md-3 col-5 form-label">Top speed</p>
+
+                <div class="col-3 col-md-auto col-12">
+                  <div class="item-editor-form-group input-with-type">
+                    <div class="input-data-type input-data-type-right">K/MH</div>
+                    <input type="text" class="item-editor-input input-right" value="360">
+                  </div>
+                </div>
+
+                <div class="col-3 col-md-auto col-12">
+                  <div class="item-editor-form-group input-with-type">
+                    <div class="input-data-type input-data-type-left">DEGREES FAHRENHEIT</div>
+                    <input type="text" class="item-editor-input" value="312°">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+</body>
+</html>
