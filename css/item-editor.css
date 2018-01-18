@@ -45,6 +45,7 @@ p {
   background-color: #b7b8ba;
   padding: 5px 7px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 #toolbar button {
@@ -56,6 +57,7 @@ p {
   border: none;
   margin-left: 6px;
   margin-right: 20px;
+  cursor: pointer;
 }
 
 #general-info-section {
@@ -255,6 +257,7 @@ p {
   right: 11px;
   top: 11px;
   padding: 14px;
+  cursor: pointer;
 }
 
 .input-gray {
