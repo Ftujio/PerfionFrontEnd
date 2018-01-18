@@ -98,47 +98,51 @@
       <div class="row">
         <!-- SIDEBAR -->
         <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
-          <div class="inner-addon right-addon">
-              <img class="glyphicon" src="icons/search.svg">
-              <input type="text" id="search" placeholder="Search" />
-          </div>
+            <!--
+            <input type="text" name="search" id="search" placeholder="Search">
+            -->
 
-          <div class="dropdown show">
+            <div class="inner-addon right-addon">
+                <img class="glyphicon" src="icons/search.svg">
+                <input type="text" id="search" placeholder="Search" />
+            </div>
+
+            <div class="dropdown show">
             <a class="btn btn-secondary nasko" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Categories
+                Categories
             </a>
 
-            <div class="dropdown-menu sub-cat" aria-labelledby="dropdownMenuLink">
-              <a class="dropdown-item nasko2" href="#">
-                <span class="dots"><h4>...</h4></span>
-                <span class="cars">Cars</span>
-              </a>
+            <div class="dropdown-menu sub-cat" id="nasko_drop" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item nasko2" href="#">
+                    <span class="dots"><h4>...</h4></span>
+                    <span class="cars">Cars</span>
+                </a>
             </div>
-          </div>
-          <br/><br/>
-          <ul class="nav nav-pills flex-column">
+            </div>
+            <br/><br/>
+            <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="#"><img src="icons/folder.svg">BMW </a>
+                <a class="nav-link" href="#"><img src="icons/folder.svg">BMW </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><img src="icons/folder.svg">Peugeot</a>
+                <a class="nav-link" href="#"><img src="icons/folder.svg">Peugeot</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link activated" href="#"><img src="icons/folder-active.svg">Audi</a>
+                <a class="nav-link activated" href="#"><img src="icons/folder-active.svg">Audi</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"><img src="icons/folder.svg">Volvo</a>
+                <a class="nav-link" href="#"><img src="icons/folder.svg">Volvo</a>
             </li>
             <li class="nav-item">
-               <a class="nav-link" href="#"><img src="icons/folder.svg">Mercedes</a>
+                <a class="nav-link" href="#"><img src="icons/folder.svg">Mercedes</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><img src="icons/folder.svg">Toyota</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><img src="icons/tag.svg"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Untagged</a>
-              </li>
-          </ul>
+                </li>
+            </ul>
         </nav>
 
         <!-- ITEM EDITOR -->
