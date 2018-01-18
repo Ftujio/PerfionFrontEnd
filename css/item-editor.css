@@ -298,6 +298,14 @@ p {
 
 @media (min-width: 1024px) {
 
+  #first-row p {
+    margin-right: 17px;
+  }
+
+  #first-row select {
+    width: 310px;
+  }
+
   .input-data-type-left {
     left: 10px;
     padding-left: 15px;
@@ -317,7 +325,11 @@ p {
   }
 
   #language-form-group-cars-tall .language-form-group-cars-tall-row:nth-child(2) img:nth-child(1) {
-    margin-right: 5px;
+    margin-right: 20px;
+  }
+
+  #special-row .language-form-group-cars {
+    width: 310px;
   }
 
 }
@@ -398,6 +410,10 @@ p {
     width: 100%;
   }
 
+  #tabs .nav-item:last-child {
+    display: none;
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -435,10 +451,6 @@ p {
 
   #tabs ul {
     border: none;
-  }
-
-  #tabs .nav-item:last-child {
-    display: none;
   }
 
 }
