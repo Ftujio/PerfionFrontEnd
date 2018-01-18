@@ -22,6 +22,7 @@ input#search {
     padding-left: 10px;
     margin-left: 10px;
     font-size: 14px;
+    z-index: 1;
 }
 
 /* enable absolute positioning */
@@ -37,6 +38,17 @@ input#search {
     padding-right: 25px;
     padding-top: 8px;
     pointer-events: none;
+    cursor: pointer;
+  }
+
+  .inner-addon img {
+      cursor: pointer;
+      z-index: 2;
+  }
+
+  #page-wrapper  .inner-addon img.glyphicon{
+    cursor: pointer !important;
+    z-index: 99999 !important;
   }
   
   /* align glyph */
@@ -129,8 +141,9 @@ input#search {
  }
 
  .nasko2:before {
-    font-family: FontAwesome;
+    /* font-family: FontAwesome; */
     content: url("../icons/sort.png");
+    cursor: pointer !important;
  }
 
  span.dots {

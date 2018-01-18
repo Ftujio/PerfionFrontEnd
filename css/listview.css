@@ -225,11 +225,11 @@ table.table tr td.brand {
   }
 
   .circleGreen:before {
-      color: green;
+      color:#24b2ab;
   }
 
   .circleRed:before {
-      color: red;
+      color: #c13351;
   }
 
   .progress, .progress-bar {
