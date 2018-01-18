@@ -104,7 +104,7 @@ h2, h4 {
 #page-wrapper .breadcrumb-root .dropdown-menu::after {
   content: " ";
   position: absolute;
-  bottom: 100%;
+  bottom: 99%;
   left: 50%;
   margin-left: -10px;
   border-width: 10px;
