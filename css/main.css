@@ -87,3 +87,38 @@ h2, h4 {
   left: -30px;
   padding: 5px 15px 5px 30px;
 }
+
+.breadcrumb-root {
+  position: relative;
+}
+
+#page-wrapper .breadcrumb-root .dropdown-menu {
+  position: absolute !important;
+  left: -85% !important;
+  margin-top: 12px;
+  width: 150px;
+  border: 2px solid #b7b8ba;
+  font-size: 14px;
+}
+
+#page-wrapper .breadcrumb-root .dropdown-menu::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #fff transparent;
+}
+
+#page-wrapper .breadcrumb-root .dropdown-menu .dropdown-item {
+  width: 90%;
+  margin: 2px auto;
+  padding: 5px 10px;
+}
+
+#page-wrapper .breadcrumb-root .dropdown-menu .dropdown-item:hover {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+}
