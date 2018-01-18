@@ -101,6 +101,13 @@ h2, h4 {
   font-size: 14px;
 }
 
+#nasko_drop .dropdown-menu {
+  margin-top: 12px;
+  width: 150px;
+  border: 2px solid #b7b8ba;
+  font-size: 14px;
+}
+
 #page-wrapper .breadcrumb-root .dropdown-menu::after {
   content: " ";
   position: absolute;
@@ -112,14 +119,14 @@ h2, h4 {
   border-color: transparent transparent #fff transparent;
 }
 
-#page-wrapper .breadcrumb-root .dropdown-menu .dropdown-item {
+#page-wrapper .breadcrumb-root .dropdown-menu .dropdown-item, #nasko_drop .dropdown-menu .dropdown-item {
   width: 90%;
   margin: 2px auto;
   padding: 5px 10px;
 }
 
-#page-wrapper .breadcrumb-root .dropdown-menu .dropdown-item:not(:first-child) {
-  padding: 5px 15px;
+#page-wrapper .breadcrumb-root .dropdown-menu .dropdown-item:not(:first-child), #nasko_drop .dropdown-menu .dropdown-item:not(:first-child) {
+  padding: 5px 20px;
 }
 
 #page-wrapper .breadcrumb-root .dropdown-menu .dropdown-item:hover {
