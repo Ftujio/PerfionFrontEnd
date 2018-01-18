@@ -102,6 +102,8 @@ input#search {
  ====== BREADCRUMBS ====== 
  */
 
+
+
  .sub-cat {
     border-radius: 0;
     line-height: 15px;
@@ -113,7 +115,7 @@ input#search {
     
 }
 
- .sub-cat a {
+ .sub-cat .nasko2 {
     color: #42454b;
     height: 37px;
     font-family: 'Fira Sans', sans-serif;
@@ -142,16 +144,18 @@ input#search {
 
 span.dots h4 {
     margin-top: -8px;
-    padding-left: 6px;
     color:#74767a;
-    font-size: 40px;
+    font-size: 30px;
     height: 20px;
     line-height: 20px;
-    display: block
+    display: block;
+    text-align: center;
+    padding-top: 3px;
+    cursor: pointer;
 }
 
  span.cars {
-    /* border: 1px solid red;*/
+
     display: block;
     width: 45%;
     color:#74767a;
@@ -172,7 +176,7 @@ span.dots h4 {
      pointer-events: none;
      text-align: center;
      width: 1em;
- }
+ } 
 
 ul.nav li {
     margin-top: -2px;
@@ -208,8 +212,11 @@ ul.nav li {
        margin-left: -20px; 
     }
 
-    span.dots {
-        display: none
+    span.dots h4{
+        /* display: none */
+        font-size: 20px;
+        padding-top: 5px;
+        cursor: pointer;
     }
 
     span.cars {
@@ -220,7 +227,7 @@ ul.nav li {
         background: #d5d6d8;
         float: left;
         position: absolute;
-        padding-left: 10%;
+        padding-left: 20%;
         z-index: 1;
         font-weight: bold;
      }

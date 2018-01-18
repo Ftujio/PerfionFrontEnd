@@ -117,11 +117,19 @@
                     Categories
                 </a>
 
-                <div class="sub-cat" id="nasko_drop" aria-labelledby="dropdownMenuLink">
-                    <a class="dropdown-item nasko2" href="#">
-                        <span class="dots" ><h4>...</h4></span>
+                <div class="sub-cat" id="nasko_drop">
+                    
+                    <div class="dropdown-item nasko2" href="#">
+                        <span class="dropdown dots" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><h4>...</h4></span> 
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
                         <span class="cars">Cars</span>
-                    </a>
+                    </div>
+                   
+           
                 </div>
                 </div>
                 <br/><br/>
@@ -161,11 +169,11 @@
                     <ul class="breadcrumbs">
                         <li class="breadcrumb-el breadcrumb-root" style="z-index: 2">
                             <span class="dropdown" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">...</span>
-                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                          </div>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Action</a>
+                                    <a class="dropdown-item" href="#">Another action</a>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
                             &nbsp;Audi
                         </li>
                         <li class="breadcrumb-el breadcrumb-next" style="z-index: 1">Audi A4</li>
